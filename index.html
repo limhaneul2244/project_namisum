@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>나미나라공화국</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- ↑↑↑↑ 스마트폰, 모바일 / 홈화면 추가 또는 모바일페이지 실행시 전체 화면으로 실행하라는 뜻 -->
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- ↑↑↑↑ 스와이퍼 슬라이드 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- ↑↑↑↑ 파비콘 -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="app_icon.png">
+    <!-- ↑↑↑↑ 모바일&앱아이콘 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- ↑↑↑↑ 폰트어썸 CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- ↑↑↑↑ 구글폰트 -->
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- ↑↑↑↑ 스와이퍼 슬라이드 js -->
+</head>
+
+<body>
+    <div id="skip_nav">
+        <a href="javascript:void(0)gnb">네비게이션 바로가기</a>
+        <a href="javascript:void(0)container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <h2 class="hidden">header</h2>
+            <div id="header_inner">
+                <div class="inner_box">
+                    <h1 id="logo"><a href="#"><img src="images/header_logo.png" alt="남이섬 로고"></a></h1>
+                    <span class="m_nav_icon"><a href="#"><i class="fas fa-align-right"></i></a></span>
+                    <div class="menu_bg"></div>
+
+                    <nav id="gnb">
+                        <div class="top_wrap">
+                            <div class="close_btn"><a href="javascript:void(0);"><i class="fas fa-times fa-2x"></i></a></div>
+                        </div>
+                        <ul class="main_menu">
+                            <li><a class="depth" href="#">나미나라공화국</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">나미나라공화국</a></li>
+                                    <li><a href="#">나미나라공화국 국민</a></li>
+                                    <li><a href="#">나미나라공화국 우방</a></li>
+                                    <li><a href="#">나미나라공화국 연방</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="depth" href="#">오늘,남이섬</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">자주묻는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="depth" href="#">티켓라운지</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">온라인 이용권</a></li>
+                                    <li><a href="#">단체안내</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="depth" href="#">호텔정관루</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">호텔정관루</a></li>
+                                    <li><a href="#">객실보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="depth" href="#">재미탐방소</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">체험ㆍ액티비티</a></li>
+                                    <li><a href="#">공연ㆍ행사ㆍ축제</a></li>
+                                    <li><a href="#">남이섬 감성선물</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="depth" href="#">맛있는상상</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">맛있는 여유</a></li>
+                                    <li><a href="#">달콤한 여유</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+                <div id="slide_box">
+                    <div class="box_inner">
+                        <span class="box_img">
+                            <span class="box_txt">Naminara Island</span>
+                        </span>
+                    </div>
+                </div>
+        </header>
+
+        <div id="container">
+            <h2 class="hidden">container</h2>
+            <section id="section">
+                <div id="section_inner">
+
+                    <div class="main_visual">
+                        <h3 class="hidden">visual widePC</h3>
+                        <video id="vid" autoplay="autoplay" loop="loop" muted="muted" controls>
+                            <source src="video/namisum_mainvisual.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <h3 class="hidden">visual basicPC</h3>
+                        <video id="vid_basic1600" autoplay="autoplay" loop="loop" muted="muted">
+                            <source src="video/basicPC_mainVisual_1600.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                        <div class="swiper-container mySwiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide"><img src="images/main_slide01.jpg" alt="필름카메라에 감성을 더하다"></li>
+                                <li class="swiper-slide"><img src="images/main_slide02.jpg" alt="호텔정관루"></li>
+                                <li class="swiper-slide"><img src="images/main_slide03.jpg" alt="스위트웨딩"></li>
+                            </ul>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+
+                    <div class="visual_bottom">
+                        <div class="notice_box">
+                            <h3 class="notice_txt">공지사항</h3>
+                            <ul>
+                                <li><a href="javascript:void(0);">서울-남이섬 왕복 셔틀버스</a></li>
+                                <li><a href="javascript:void(0);">종교인관광객을 위한 서비스</a></li>
+                                <li><a href="javascript:void(0);">남이섬 선박운행시간 조정 안내</a></li>
+                            </ul>
+                            <a class="notice_more" href="javascript:void(0);"><i class="fas fa-bars fa-2x"></i></a>
+                        </div>
+
+                        <div class="notice_ct">
+                            <span class="question"><img src="images/question.png" alt="자주묻는질문"></span>
+                            <span class="schedule"><img src="images/schedule.png" alt="단체상담"></span>
+                            <span class="map"><img src="images/map.png" alt="찾아오시는길"></span>
+                        </div>
+                    </div>
+
+                    <article id="payment_ct">
+                        <h3 class="hidden">payment</h3>
+                        <div id="payment_bg" class="payment_bg">
+                            <div class="pay_item">
+                                <ul class="pay_txt">
+                                    <li>TICKET</li>
+                                    <li>입장부터 결제까지 비대면으로</li>
+                                    <li>온라인예매하고 바로입장하자!</li>
+                                    <li>남이섬입장권과 레스토랑, 까페, 액티비티이용권까지</li>
+                                    <li><span class="red_point">최대 23% 할인혜택</span>까지놓치지마세요.</li>
+                                    <li><a class="use_btn" href="javascript:void(0);">온라인이용권구매</a></li>
+                                </ul>
+                                <div class="pay_video">
+                                    <video id="pay_vid" autoplay="autoplay" loop="loop" muted="muted">
+                                        <source src="video/pay_vid.mp4" type="video/mp4">
+                                        <strong>Your browser does not support the video tag.</strong>
+                                    </video> 
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="joyful">
+                        <figure class="active">
+                            <img src="images/active_bg.png" alt="엑티비티">
+                            <figcaption>
+                              <h3>남이섬 엑티비티</h3>
+                              <p>짜릿하게VS로맨틱하게<br>취향따라 즐기는<br>다양한 어트렉션</p>
+                              <a href="#" class="read-more">Read More</a>
+                            </figcaption>
+                        </figure>
+                
+                        <div class="active_box00">
+                            <figure class="active notice">
+                                <img src="images/notice.png" alt="남이섬 소식">
+                                <figcaption>
+                                  <h3>남이섬 소식</h3>
+                                  <p>남이섬의 공연/전시/행사/이벤트</p>
+                                  <a href="#" class="read-more">Read More</a>
+                                </figcaption>
+                            </figure>
+                            <figure class="active hotel">
+                                <img src="images/hotel.png" alt="호텔정관루">
+                                <figcaption>
+                                  <h3>호텔정관루</h3>
+                                  <p>남이섬 숲속 호텔, 정관루</p>
+                                  <a href="#" class="read-more">Read More</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                
+                        <div class="active_box01">
+                            <figure class="active culture">
+                                <img src="images/culture.png" alt="문화예술의 섬">
+                                <figcaption>
+                                  <h3>문화예술의 섬</h3>
+                                  <p>동화의 나라 속으로 떠나요</p>
+                                  <a href="#" class="read-more">Read More</a>
+                                </figcaption>
+                            </figure>
+                            <figure class="active food">
+                                <img src="images/food.png" alt="맛있는 상상">
+                                <figcaption>
+                                  <h3>맛있는 상상</h3>
+                                  <p>세계인의 입맛을 아우르는 다양한 맛</p>
+                                  <a href="#" class="read-more">Read More</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <!--<article id="event_ct">
+                        <h3 class="hidden">event</h3>
+                        <div class="event_bg">
+                            <div class="event_top">
+                                <h3 class="main_txt">문화/전시/이벤트</h3>
+                                <h4 class="more_btn"><a href="#">more+</a></h4>
+                            </div>
+                            <div class="main_gallary">
+                                <div class="gallary_wrap">
+                                    <div class="event_box">
+                                        <ul class="event_list">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/event01.jpg" alt="강원곳간X남이섬 수상((水上)한 곳간 프리마켓">
+                                                    <span class="detail_txt">
+                                                        [행사]<br>
+                                                        강원곳간X남이섬<br>
+                                                        수상((水上)한 곳간 프리마켓
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/event02.jpg" alt="2021 남이섬 세계 책나라 축제">
+                                                    <span class="detail_txt">
+                                                        [종합]<br>
+                                                        2021 남이섬 세계 책나라 축제
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/event03.png" alt="2021 남이섬 어쿠스틱 청춘페스티벌 ‘ 원더풀 위캔드’">
+                                                    <span class="detail_txt">
+                                                        [공연]<br>
+                                                        2021 남이섬 어쿠스틱 청춘페스티벌<br>
+                                                        ‘원더풀 위캔드’
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/event04.jpg" alt="">
+                                                    <span class="detail_txt">lorem</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/event05.jpg" alt="">
+                                                    <span class="detail_txt">lorem</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="gallary_btn">
+                                    <span class="lft_wrap btn">
+                                        <a href="javascript:void(0)" class="arrow_lft">
+                                            <i class="fas fa-chevron-left fa-3x arrow_lft_icon"></i>
+                                        </a>
+                                    </span>
+                                    <span class="rht_wrap btn">
+                                        <a href="javascript:void(0)" class="arrow_rht">
+                                            <i class="fas fa-chevron-right fa-3x"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="gift_ct">
+                        <h3 class="hidden">gift</h3>
+                        <div class="gift_bg">
+                            <div id="gift_inner">
+                                <div class="gift_txt">
+                                    <p class="main_txt">남이섬만의 감성선물</p>
+                                    <p class="sub_txt">소중한 분에게 선물해보세요.</p>
+                                </div>
+                                <div class="gift_gallary">
+                                    <div class="gift_item">
+                                        <div class="gift_img goods">굿즈 이미지</div>
+                                        <div class="item_txt">
+                                            <span class="gift_head">남이섬 굿즈</span>
+                                            <span class="gift_mid">남이섬만의 한정굿즈</span>
+                                            <span class="buy_btn"><a href="#">구매하기</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="gift_item">
+                                        <div class="gift_img tea_house">티하우스 이미지</div>
+                                        <div class="item_txt">
+                                            <span class="gift_head">티하우스 남이섬</span>
+                                            <span class="gift_mid">차를 통해 가치있는 쉼의 경험과<br>균형잡힌 삶을 제안합니다.</span>
+                                            <span class="buy_btn"><a href="#">구매하기</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="gift_item">
+                                        <div class="gift_img soup">동백비누 이미지</div>
+                                        <div class="item_txt">
+                                            <span class="gift_head">은은한 동백비누</span>
+                                            <span class="gift_mid">매혹적인 동백의 은은한 향기와<br>보습만땅 피부를 촉촉하게</span>
+                                            <span class="buy_btn"><a href="#">구매하기</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="sns">
+                        <h3 class="hidden">sns</h3>
+                        
+                    </article> -->
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
