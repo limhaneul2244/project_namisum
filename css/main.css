@@ -72,119 +72,113 @@ font-family: 'Roboto Slab', serif; */
 .active_box01>.food {width: 100%;height: 252px;}
 
 figure.active {
-    position: relative;
-    overflow: hidden;
-    color: #fff;
-    margin-right: 1.2%;
-    /* min-width: 230px;
-    max-width: 315px; */
-    /* max-height: 600px; */
-    /* width: 100%; */
-    text-align: left;
-    background-color: #07090c;
-    font-size: 16px;
-    -webkit-perspective: 50em;
-    perspective: 50em;
-    }
-    figure.active * {
-    /* -webkit-box-sizing: border-box;
-    box-sizing: border-box; */
-    -webkit-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-    }
-    figure.active img {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    -webkit-transform-origin: 50% 0%;
-    -ms-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    }
-    figure.active figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    -webkit-transform: rotateX(90deg);
-    transform: rotateX(90deg);
-    -webkit-transform-origin: 50% 100%;
-    -ms-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    z-index: 1;
-    opacity: 0;
-    padding: 20px 30px;
-    }
-    figure.active h3,figure.active p {
-    line-height: 2em;
-    }
-    figure.active h3 {
-    margin: 0;
-    font-size: 2.4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #eea430;
-    }
-    figcaption>h3.big_txt {font-size: 3rem; color: #eea430;}
-    figure.active p {
-        font-size: 0.9rem;
-        font-weight: 500;
-        margin: 0 0 15px;
-        color: #fff;
-    }
-    figcaption>p.active_infor {font-size: 1.2rem;}
-    figure.active .read-more {
-    display: inline-block;
-    border: 2px solid #fff;
-    padding: 0.6em 1em;
-    font-size: 0.9em;
-    color: #fff;
-    }
-    /* 호버 했을때 */
-    figure.active .read-more:hover {
-    background-color: #fff;
-    color: #333;
-    }
-    figure.active:hover img,
-    figure.active.hover img {
-    -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    opacity: 0;
-    }
-    figure.active:hover figcaption,
-    figure.active.hover figcaption {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    opacity: 1;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-    }
-
-
-
-
-
-/* #event */
-/* 66.7% -> 1920/1280의 값 */
-
-#event_ct {
-    width: 1920px;
-    margin: 0 auto;
-    padding-bottom: 5%;
+position: relative;
+overflow: hidden;
+color: #fff;
+margin-right: 1.2%;
+text-align: left;
+background-color: rgb(11, 48, 104);
+font-size: 16px;
+-webkit-perspective: 50em;
+perspective: 50em;
+}
+figure.active * {
+/* -webkit-box-sizing: border-box;
+box-sizing: border-box; */
+-webkit-transition: all 0.6s ease;
+transition: all 0.6s ease;
+}
+figure.active img {
+opacity: 1;
+width: 100%;
+height: 100%;
+-webkit-transform-origin: 50% 0%;
+-ms-transform-origin: 50% 0%;
+transform-origin: 50% 0%;
+}
+figure.active figcaption {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+width: 100%;
+-webkit-transform: rotateX(90deg);
+transform: rotateX(90deg);
+-webkit-transform-origin: 50% 100%;
+-ms-transform-origin: 50% 100%;
+transform-origin: 50% 100%;
+z-index: 1;
+opacity: 0;
+padding: 20px 30px;
+}
+figure.active h4,figure.active p {
+line-height: 2em;
+}
+figure.active h4 {
+margin: 0;
+font-size: 2.4rem;
+font-weight: 800;
+text-transform: uppercase;
+color: #eea430;
+}
+figcaption>h4.big_txt {font-size: 3rem; color: #eea430;}
+figure.active p {
+font-size: 0.9rem;
+font-weight: 500;
+margin: 0 0 15px;
+color: #fff;
+}
+figcaption>p.active_infor {font-size: 1.2rem;}
+figure.active .read-more {
+display: inline-block;
+border: 2px solid #fff;
+padding: 0.6em 1em;
+font-size: 0.9em;
+color: #fff;
+}
+/* 호버 했을때 */
+figure.active .read-more:hover {
+background-color: #fff;
+color: #333;
+}
+figure.active:hover img,figure.active.hover img {
+-webkit-transform: rotateX(-90deg);
+transform: rotateX(-90deg);
+opacity: 0;
+}
+figure.active:hover figcaption,figure.active.hover figcaption {
+-webkit-transform: rotateX(0deg);
+transform: rotateX(0deg);
+opacity: 1;
+-webkit-transition-delay: 0.2s;
+transition-delay: 0.2s;
 }
 
-.event_bg {
-    display: block;
-    width: 100%;
-    height: 630px;
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(170, 170, 170, 0.637);
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-image: url(../images/event_bg.jpg);
-}
 
+/* #event_ct */
+#event_ct {position: relative; width: 100%;padding-bottom: 5%;}
+#event_ct>.event_bg {display: block;width: 100%;height: 630px;background-size: cover;background-position: center;background-color: rgba(170, 170, 170, 0.637);
+    background-blend-mode: multiply;background-repeat: no-repeat;background-image: url(../images/event_bg.jpg);}
+.event_ct_wrap {position: absolute; top: 0; left:8.5vw;}
+.event_top { height: 3.9vw; padding-top: 1%; margin: 0 auto;}
+.event_top>.main.txt {float: left;}
+.event_top>.more_btn {float: right;}
+.event_top>.more_btn>a {display: block; width: 100%; color: #fff; text-align: center; font-size: 2rem;}
+
+.event_inner {width: 1600px; height: 540px; margin: 0 auto; background-color: rgb(255, 255, 255,0.7);}
+.event_box {width: 100%;height: 100%;}
+
+.event_box>ul.event_list {width: 3000px; padding-top: 2.8%;}
+.gall_event {display: flex;flex-flow: column wrap;width: 100%;}
+li.gall_event>a {position: relative; display: block; width: 100%; height: 490px;}
+li.gall_event>a:hover img {transform: scale(1.05); transition: all 0.3s linear;}
+li.gall_event>a img {overflow:hidden;display: block;width: 70%; margin: 0 auto;}
+
+#event_ct .detail_txt {display: block;width: 70%; height: 70px; margin: 0 auto; padding-top: 3%; text-align: center; line-height: 1.2; font-weight: bold; color:#333;}
+
+
+
+/* 
 .event_top {
     display: flex;
     justify-content: space-between;
@@ -245,7 +239,7 @@ ul.event_list>li>a>img {
 .detail_txt {
     display:block;
     text-align: center;
-}
+} */
 
 /* #gift_ct */
 #gift_ct {
@@ -441,17 +435,36 @@ ul.event_list>li>a>img {
     .active_box01>.culture {height: 203.9px; margin-bottom: 1%;}
     .active_box01>.food {height: 203.9px;}
 
-    figure.active h3 {margin: 0;font-size: 1.8rem;font-weight: 800;text-transform: uppercase;color: #eea430;}
-    figcaption>h3.big_txt {font-size: 2.7rem;}
+    figure.active h4 {margin: 0;font-size: 1.8rem;font-weight: 800;text-transform: uppercase;color: #eea430;}
+    figcaption>h4.big_txt {font-size: 2.7rem;}
     figure.active p {font-size: 0.9rem;font-weight: 300;}
     figcaption>p.active_infor {font-size: 1rem;}
     figure.active .read-more {border: 1.5px solid #fff;font-size: 0.8em;}
+
+    /* #event */
+    #event_ct {width: 100%;padding-bottom: 5%;}
+    #event_ct>.event_bg {display: block;width: 100%;height: 500px;background-size: cover;background-position: center;background-color: rgba(170, 170, 170, 0.637);
+        background-blend-mode: multiply;background-repeat: no-repeat;background-image: url(../images/event_bg.jpg);}
+
+    .event_top {overflow: hidden; width: 1280px; height: 3.9vw; padding: 0.5% 0; margin: 0 auto;}
+    .event_top>.main.txt {float: left; font-size: 1.7vw;}
+    .event_top>.more_btn {float: right;}
+    .event_top>.more_btn>a {display: block; width: 100%; color: #fff; text-align: center; font-size: 1.5rem;}
+
+    .event_inner {width: 1280px; height: 420px;}
+
+    .event_box>ul.event_list {width: 3000px; padding-top: 2%;}
+    .gall_event {display: flex;flex-flow: column wrap;width: 60%; height: 393px;}
+    li.gall_event>a {overflow:hidden; position: relative; display: block; width: 100%; height: 393px;}
+    li.gall_event>a:hover img {transform: scale(1.05); transition: all 0.3s linear;}
+    li.gall_event>a img {overflow:hidden;display: block;width: 70%; margin: 0 auto;}
+
+    #event_ct .detail_txt {padding-top: 3%;font-size: 0.98vw;}
+
 }
 
 /* -----------------------------대형태블릿(769~1280 / 100%정렬)----------------------------- */
 @media screen and (max-width : 1280px){
-
-    
 
     /* #payment */
     /* .payment_bg {height: 36.5vh;} */
@@ -476,11 +489,29 @@ ul.event_list>li>a>img {
     .active_box01>.culture {height: 15vw; margin-bottom: 6%;}
     .active_box01>.food {height: 15vw;}
 
-    figure.active h3 {margin: 0;font-size: 1.9vw;font-weight: 800;text-transform: uppercase;color: #eea430;}
-    figcaption>h3.big_txt {font-size: 2.4rem;}
-    figure.active p {font-size: 1.2vw;font-weight: 300;}
-    figure.active .read-more {border: 1.5px solid #fff;font-size: 0.9vw;}
-    figure.active figcaption {padding: 15px 25px;}
+    figcaption {display: none;}
+    figure.active:hover img,figure.active.hover img {-webkit-transform: none;transform: none;opacity: 1;}
+
+    /* #event */
+    #event_ct {width: 100%;padding-bottom: 5%;}
+    #event_ct>.event_bg {display: block;width: 100%;height: 500px;background-size: cover;background-position: center;background-color: rgba(170, 170, 170, 0.637);
+        background-blend-mode: multiply;background-repeat: no-repeat;background-image: url(../images/event_bg.jpg);}
+
+    .event_top {overflow: hidden; width: 100%; height: 3.9vw; padding: 0.5% 0; margin: 0 auto;}
+    .event_top>.main.txt {float: left; font-size: 1.7vw;}
+    .event_top>.more_btn {float: right;}
+    .event_top>.more_btn>a {display: block; width: 100%; color: #fff; text-align: center; font-size: 1.5rem;}
+
+    .event_inner {width: 1280px; height: 420px;}
+
+    .event_box>ul.event_list {width: 3000px; padding-top: 2%;}
+    .gall_event {display: flex;flex-flow: column wrap;width: 60%; height: 393px;}
+    li.gall_event>a {overflow:hidden; position: relative; display: block; width: 100%; height: 393px;}
+    li.gall_event>a:hover img {transform: scale(1.05); transition: all 0.3s linear;}
+    li.gall_event>a img {overflow:hidden;display: block;width: 70%; margin: 0 auto;}
+
+    #event_ct .detail_txt {padding-top: 3%;font-size: 0.98vw;}
+}
 
 
 
@@ -521,19 +552,19 @@ ul.event_list>li>a>img {
     .active_box01>.culture {height: 25vw; margin-bottom: 5%;}
     .active_box01>.food {height: 25vw;}
 
-    figure.active h3 {margin: 0;font-size: 1.9vw;font-weight: 800;text-transform: uppercase;color: #eea430;}
-    figcaption>h3.big_txt {font-size: 2.4rem;}
-
+    /* figure.active h4 {margin: 0;font-size: 1.9vw;font-weight: 800;text-transform: uppercase;color: #eea430;}
+    figcaption>h4.big_txt {font-size: 2.4rem;}
     figure.active p {font-size: 1.2vw;font-weight: 300;}
     figure.active .read-more {border: 1.5px solid #fff;font-size: 0.9vw;}
-    figure.active figcaption {padding: 15px 25px;}
+    figure.active figcaption {padding: 15px 25px;} */
 
+    figcaption {display: none;}
+    figure.active:hover img,figure.active.hover img {-webkit-transform: none;transform: none;opacity: 1;}
 }
 
 
 /* -----------------------------모바일(~414px / 100%정렬)----------------------------- */
-@media screen and (min-width : 320px) and (max-width : 414px){
-
+@media screen and (max-width : 414px){
     .main_visual { display: flex; margin-top: 53px;}
     .mySwiper>ul.swiper-wrapper>.swiper-slide>img {display: block; width: 100vw; height: 38.5vh; background-size: contain;}
     
@@ -561,31 +592,7 @@ ul.event_list>li>a>img {
     .active_box01>.culture {height: 25vw; margin-bottom: 2.5%;}
     .active_box01>.food {height: 25vw;}
 
-    figure.active h3 {margin: 0;font-size: 1.9vw;font-weight: 800;text-transform: uppercase;color: #eea430;}
-    figcaption>h3.big_txt {font-size: 2.4rem;}
-
-    figure.active p {font-size: 1.2vw;font-weight: 300;}
-    figure.active .read-more {border: 1.5px solid #fff;font-size: 0.9vw;}
-    figure.active figcaption {padding: 15px 25px;}
-
-    figure.active * {transition: none;}
-    figure.active {perspective: none;}
-    figure.active img {transform-origin: 0% 0%;}
-    figure.active {perspective: 0;}
     figcaption {display: none;}
-    /* 호버 */
-    figure.active:hover img,
-    figure.active.hover img {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 0;
-    }
-    figure.active:hover figcaption,
-    figure.active.hover figcaption {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    }
+    figure.active:hover img,figure.active.hover img {-webkit-transform: none;transform: none;opacity: 1;}
+
 }
