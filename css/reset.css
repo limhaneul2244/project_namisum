@@ -67,12 +67,7 @@ input.underline {
     border-bottom: 1px solid #000;
     outline: none;
 }
-.main_txt { 
-	display: inline-block;
-	margin: 0 auto;
-	font-size: 2vw;
-	color: #fff;
-}
+
 * {
 	color: #333;
 	box-sizing: border-box;

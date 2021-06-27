@@ -67,3 +67,36 @@ $(document).ready(function () {
         $(this).next(".sub_menu").slideDown('slow'); //클릭한 this의 sub_menu 다음에 있는(next) 애들만 보여라
     });
 });
+
+//공연/전시/행사/이벤트 슬라이드 (770보다 클때)
+$(document).ready(function () {
+    let width = $(window).width(); //윈도우의 넓이
+    if (width > 770) {
+        let swiper = new Swiper(".event_Swiper", {
+            slidesPerView: 4,
+            freeMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        });
+    } 
+});
+
+
+
+//공연/전시/행사/이벤트 슬라이드 (769보다 작을때)
+// $(document).ready(function () {
+//     let width = $(window).width(); //윈도우의 넓이
+
+//     if (width < 769) {
+//         let swiper = new Swiper(".event_Swiper", {
+//             slidesPerView: 3,
+//             freeMode: true,
+//             navigation: {
+//                 nextEl: ".swiper-button-next",
+//                 prevEl: ".swiper-button-prev",
+//             }
+//         });
+//     }
+// });
