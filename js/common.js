@@ -68,35 +68,31 @@ $(document).ready(function () {
     });
 });
 
-//공연/전시/행사/이벤트 슬라이드 (770보다 클때)
+//공연/전시/행사/이벤트 슬라이드
 $(document).ready(function () {
-    let width = $(window).width(); //윈도우의 넓이
-    if (width > 770) {
-        let swiper = new Swiper(".event_Swiper", {
-            slidesPerView: 4,
-            freeMode: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            }
-        });
-    } 
+    let swiper = new Swiper(".event_Swiper", {
+        slidesPerView: 4,
+        freeMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        }
+    });
 });
 
 
+// top_btn
+$(document).ready(function(){
 
-//공연/전시/행사/이벤트 슬라이드 (769보다 작을때)
-// $(document).ready(function () {
-//     let width = $(window).width(); //윈도우의 넓이
-
-//     if (width < 769) {
-//         let swiper = new Swiper(".event_Swiper", {
-//             slidesPerView: 3,
-//             freeMode: true,
-//             navigation: {
-//                 nextEl: ".swiper-button-next",
-//                 prevEl: ".swiper-button-prev",
-//             }
-//         });
-//     }
-// });
+    $("#top_btn").click(function(){  //top버튼 클릭시 이동
+        $("html,body").stop().animate({"scrollTop":0},1000); //html, body 태그 기점으로 1.4초 정도 위로 이동
+    });
+    $(window).on("scroll",function(){
+        let scroll = $(window).scrollTop(); //윈도우창의 화면 높이를 측정해서
+        if(scroll>=1100){  //측정 높이가 1080이 넘어가면 기능을 수행해라
+            $("#top_btn").fadeIn('slow'); //1000이 넘어가면 버튼을 천천히 보여라
+        } else {
+            $("#top_btn").fadeOut('slow'); //1000이 넘어가지 않으면 화면에서 버튼 숨겨
+        }
+    });
+});

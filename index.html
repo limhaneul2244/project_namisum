@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- ↑↑↑↑ 스마트폰, 모바일 / 홈화면 추가 또는 모바일페이지 실행시 전체 화면으로 실행하라는 뜻 -->
-    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- ↑↑↑↑ aos 연동 -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- ↑↑↑↑ 스와이퍼 슬라이드 -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -24,13 +25,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
     <!-- ↑↑↑↑ 구글폰트 -->
-
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+    <!-- ↑↑↑↑ aos js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- ↑↑↑↑ 스와이퍼 슬라이드 js -->
+    <script src="js/mainpopup.js"></script>
+    <!-- ↑↑↑JS팝업창 -->
 </head>
 
 <body>
@@ -109,7 +113,6 @@
             <h2 class="hidden">container</h2>
             <section id="section">
                 <div id="section_inner">
-
                     <div class="main_visual">
                         <h3 class="hidden">visual widePC</h3>
                         <video id="vid" autoplay="autoplay" loop="loop" muted="muted" controls>
@@ -154,7 +157,7 @@
                         <h3 class="hidden">payment</h3>
                         <div id="payment_bg" class="payment_bg">
                             <div class="pay_item">
-                                <ul class="pay_txt">
+                                <ul class="pay_txt" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine"data-aos-duration="800">
                                     <li>TICKET</li>
                                     <li>입장부터 결제까지 비대면으로</li>
                                     <li>온라인예매하고 바로입장하자!</li>
@@ -248,7 +251,7 @@
                                                 <span class="detail_txt">
                                                     [행사]<br>
                                                     강원곳간X남이섬<br>
-                                                    수상((水上)한 곳간 프리마켓
+                                                    프리마켓
                                                 </span>
                                             </a>
                                         </li>
@@ -266,8 +269,7 @@
                                                 <img src="images/event03.jpg" alt="2021 남이섬 어쿠스틱 청춘페스티벌 ‘ 원더풀 위캔드’">
                                                 <span class="detail_txt">
                                                     [공연]<br>
-                                                    2021 남이섬 어쿠스틱 청춘페스티벌<br>
-                                                    ‘원더풀 위캔드’
+                                                    2021 ‘원더풀 위캔드’
                                                 </span>
                                             </a>
                                         </li>
@@ -275,7 +277,7 @@
                                             <a href="javascript:void(0);">
                                                 <img src="images/event04.jpg" alt="4Room 포르투갈 작가들의 숲속 공방">
                                                 <span class="detail_txt">[전시]<br>
-                                                    4Room 포르투갈 작가들의<br>숲속 공방
+                                                    4Room 포르투갈 <br>작가들의 숲속 공방
                                                 </span>
                                             </a>
                                         </li>
@@ -302,14 +304,14 @@
                         <h3 class="hidden">남이섬 감성선물</h3>
                         <div class="gift_bg"></div>
                         <div id="gift_inner">
-                            <div class="gift_txt">
+                            <div class="gift_txt"data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
                                 <p class="main_txt">남이섬만의 감성선물</p>
                                 <p class="sub_txt">소중한 분에게 선물해보세요.</p>
                             </div>
                             <div class="gift_gallary">
                                 <div class="gift_item">
                                     <div class="gift_img goods">굿즈 이미지</div>
-                                    <div class="item_txt">
+                                    <div class="item_txt"data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">
                                         <span class="gift_head">남이섬 굿즈</span>
                                         <span class="gift_mid">남이섬만의 한정굿즈<br>특별한 감성을 선물합니다.</span>
                                         <span class="buy_btn"><a href="javascript:void(0);">구매하기</a></span>
@@ -317,7 +319,7 @@
                                 </div>
                                 <div class="gift_item">
                                     <div class="gift_img tea_house">티하우스 이미지</div>
-                                    <div class="item_txt">
+                                    <div class="item_txt"data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">
                                         <span class="gift_head">티하우스 남이섬</span>
                                         <span class="gift_mid">차를 통해 가치있는 쉼의 경험과<br>균형잡힌 삶을 제안합니다.</span>
                                         <span class="buy_btn"><a href="javascript:void(0);">구매하기</a></span>
@@ -325,7 +327,7 @@
                                 </div>
                                 <div class="gift_item">
                                     <div class="gift_img soup">동백비누 이미지</div>
-                                    <div class="item_txt">
+                                    <div class="item_txt"data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">
                                         <span class="gift_head">은은한 동백비누</span>
                                         <span class="gift_mid">매혹적인 동백의 은은한 향기와<br>보습만땅 피부를 촉촉하게</span>
                                         <span class="buy_btn"><a href="javascript:void(0);">구매하기</a></span>
@@ -335,9 +337,11 @@
 
                             <div class="m_gift_gallary">
                                 <h3 class="hidden">모바일_남이섬 감성선물</h3>
-                                <div class="m_tea_house"><img src="images/gift02.png" alt="모바일 티하우스 이미지"></div>
+                                <div class="m_tea_house"data-aos="fade-right"data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                                    <img src="images/gift02.png" alt="모바일 티하우스 이미지">
+                                </div>
                                 <ul class="txt_area">
-                                    <li>남이섬 감성선물</li>
+                                    <li data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">남이섬 감성선물</li>
                                     <li><a href="javascript:void(0);">남이섬 굿즈<i class="fas fa-caret-left left_arrow"></i></a></li>
                                     <li><a href="javascript:void(0);">티하우스 남이섬<i class="fas fa-caret-left left_arrow"></i></a></li>
                                     <li><a href="javascript:void(0);">은은한 동백비누<i class="fas fa-caret-left left_arrow"></i></a></li>
@@ -372,7 +376,58 @@
                 </div>
             </section>
         </div>
+
+        <footer id="footer">
+            <h2 class="hidden">footer</h2>
+            <div id="footer_inner">
+                <div class="footer_logo">
+                    <a href="index.html"><img src="images/footer_logo.png" alt="footer_logo"></a>
+                </div>
+                <div class="footer_infor">
+                    <div class="footer_infor_top">
+                        <span><a href="javascript:void(0);">남이섬은</a></span>
+                        <span><a href="javascript:void(0);">연혁</a></span>
+                        <span><a href="javascript:void(0);">사회공헌</a></span>
+                        <span><a href="javascript:void(0);">개인정보취급방침</a></span>
+                    </div>
+                    <address>
+                        <p>📞Tel. 031-580-8114</p>
+                        <p>출입국관리사무소 : 12422 경기도 가평군 가평읍 북한강변로 1024</p>
+                        <p>남이섬관광휴양지 : 24464 강원도 춘천시 남산면 남이섬길1 </p>
+                    </address>
+                </div>
+            </div>
+        </footer>
+
+        <div id="top_btn">
+            <a href="javascript:void(0)"><i class="far fa-caret-square-up top"></i></a>
+        </div>
+
     </div>
+    <!-- ↓↓↓↓ 팝업(모달)창 -->
+    <div id="showimage" style="position: absolute;top: 200px; left: 100px; width: 322px; height: 322px; z-index: 300;">
+        <div class="pop_img"><img src="pop/namisum_mydog_QR.png" alt="상업적 목적이 아닌 개인포트폴리오용도로 제작되었다는 의미가 담긴 이미지 그 출처가 따로 있음을 밝힘"></div>
+        <form style="font-size: 12px; text-align: center; background-color: rgba(255, 255, 255, 0.4);">
+            <input type="checkbox" id="Notice" name="Notice" title="오늘은 이 창을 열지 않음 선택 상자">
+            <label for="Notice">오늘은 이 창을 열지 않음</label>
+            <a href="#" onclick="closewin();hidebox();return false;">[close]</a>
+        </form>
+        <script>
+            function closewin(){
+                let chk = document.getElementById("Notice")
+                if(chk.checked){
+                    setCookie("Notice","done",1); 
+                }
+            }
+            if(getCook("Notice")=="Done"){ 
+                hidebox();
+            }
+        </script>
+    </div>
+    <!-- ↓↓↓↓ aos연동 -->
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
