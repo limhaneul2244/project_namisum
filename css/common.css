@@ -63,19 +63,9 @@ address {width: 100%;}
 address p {width: 100%; color: #eea430; font-weight: 400; padding-bottom: 2%;}
 
 /* -----------------------top_btn----------------------- */
-#top_btn {display: none;position: fixed;bottom: 10%;right: 10%;}
+#top_btn {display: none;position: fixed;bottom: 10%;right: 10%; z-index: 350;}
 #top_btn a {display: block;}
 #top_btn a>.top  {display: block;font-size: 2.8vw;color: rgb(204, 177, 25);}
-
-/* -----------------------pop_up----------------------- */
-/* #showimage{position: absolute;top: 200px; left: 100px; width: 322px; height: 322px; z-index: 300;}
-#showimage form {font-size: 12px; text-align: center; background-color: rgba(255, 255, 255, 0.4);}
-#showimage>.pop_img{display: block; width: 100%;}
-#showimage>.pop_img>img{display: block; width: 100%;} */
-
-
-
-
 
 
 /* @media screen */
@@ -124,7 +114,12 @@ address p {width: 100%; color: #eea430; font-weight: 400; padding-bottom: 2%;}
 
     #gnb { position: fixed; top: 0; right: -100%; width: 80%; z-index: 300; background-color: #fff;}
     #gnb>.main_menu>li>a.depth:hover {border-bottom: none;}
+
     .top_wrap {display: block; width: 100%; height: 82px; background-color: #333;}
+    .top_wrap .gnb_img {float: left; width: 85%; height: 72px; margin-top: 1%;}
+    .top_wrap .gnb_img img:first-child {width: 35%; margin-top: 1%;}
+    .top_wrap .gnb_img img:last-child {width: 10%;}
+
     .top_wrap>.close_btn {float: right; width: 10%; height: 80px;}
     .top_wrap>.close_btn>a {display: block; width: 100%; height: 80px; text-align: center;}
     .top_wrap>.close_btn>a>i {display: block; width: 100%; height: 80px; line-height: 80px; margin: 0 auto; color: #fff;}
@@ -176,6 +171,12 @@ address p {width: 100%; color: #eea430; font-weight: 400; padding-bottom: 2%;}
 
     #gnb { position: fixed; top: 0; right: -100%; width: 80%; z-index: 300; background-color: #fff;}
 
+    /* 여기부터 수정작업 */
+    .top_wrap {display: block; width: 100%; height: 82px; background-color: #333;}
+    .top_wrap .gnb_img {float: left; width: 80%; height: 72px; padding-top: 0.5%;}
+    .top_wrap .gnb_img img:first-child {width: 70%;}
+    .top_wrap .gnb_img img:last-child {display: none;}
+
     .top_wrap {display: block; width: 100%; height: 70px; background-color: #333;}
     .top_wrap>.close_btn {float: right; width: 10%; height: 70px;}
     .top_wrap>.close_btn>a {display: block; width: 100%; height: 70px; text-align: center;}
@@ -225,7 +226,10 @@ address p {width: 100%; color: #eea430; font-weight: 400; padding-bottom: 2%;}
     .menu_bg {position: fixed;top: 0;left: 0;width: 100%;z-index: 280;background: #000;opacity: 0.5;}
 
     #gnb { position: fixed; top: 0; right: -100%; width: 80%; z-index: 300; background-color: #fff;}
-    
+    .top_wrap .gnb_img {float: left; width: 80%; height: 10vw; margin-top: 2%;}
+    .top_wrap .gnb_img img:first-child {width: 65%; margin-top: 1%;}
+    .top_wrap .gnb_img img:last-child {display: none;}
+
     .top_wrap {display: block; width: 100%; height: 55px; background-color: #333;}
     .top_wrap>.close_btn {float: right; width: 10%; height: 55px;}
     .top_wrap>.close_btn>a {display: block; width: 100%; height: 55px;}
@@ -234,7 +238,8 @@ address p {width: 100%; color: #eea430; font-weight: 400; padding-bottom: 2%;}
     #gnb>.main_menu {display: flex; flex-flow: column wrap; width: 100%; color: #000;}
     #gnb>.main_menu>li {width: 100%; height: auto; border-bottom: 1px solid #000;}
     #gnb>.main_menu>li>a.depth {display: block; width: 100%; height: 62px; font-size: 0.7rem; line-height: 62px; font-weight: bold; text-align: left; text-indent: 20px; color: #000;}
-
+    #gnb>.main_menu>li>a.depth:hover {border-bottom: 0;}
+    
     .sub_menu {display: none; width: 100%; margin: 1vh 0;}
     .sub_menu>li {width: 100%;}
     .sub_menu>li>a {display: block;width: 100%;height: 38px; font-size: 0.6rem; line-height: 38px;text-align: center;text-align: left; text-indent: 40px; color: rgb(0, 0, 0);}
