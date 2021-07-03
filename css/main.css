@@ -28,7 +28,7 @@ font-family: 'Roboto Slab', serif; */
 .mySwiper>ul.swiper-wrapper>.swiper-slide {width: 100%;}
 .mySwiper>ul.swiper-wrapper>.swiper-slide>img {display: block; width: 100%; height: 527.34px;}
 
-.visual_bottom {position: absolute;  left: 300px; top: 700px; width: 68%; height: 180px; margin: 0 auto;}
+.visual_bottom {position: absolute;  left: 300px; top: 750px; width: 68%; height: 180px; margin: 0 auto;}
 .notice_box {position: relative; float: left; width: 30%; height: 180px; background-color: rgb(0,0,0,0.30); margin-left: 20px;}
 .notice_box>.notice_txt {font-size: 1.7rem; padding: 2%;  color: #fff; border-bottom: 1px solid #fff;}
 .notice_box>ul {padding-top: 1.5%;}
@@ -83,8 +83,6 @@ font-size: 16px;
 perspective: 50em;
 }
 figure.active * {
-/* -webkit-box-sizing: border-box;
-box-sizing: border-box; */
 -webkit-transition: all 0.6s ease;
 transition: all 0.6s ease;
 }
@@ -211,7 +209,7 @@ li.gall_event>a img {overflow:hidden;display: block;width: 70%; margin: 0 auto;}
 /* #sns_ct */
 #sns_ct {position: relative;width: 100%;}
 
-.sns_bg {width: 100%; height: 40vw; background-color: #7b7b88;}
+.sns_bg {width: 100%; height: 85vh; background-color: #7b7b88;}
 .sns_ct_inner {position: absolute; top:10px; left:50%; transform:translateX(-50%); width: 1600px; margin: 0 auto;}
 .sns_top {width: 100%; padding-top: 1%;}
 .sns_top h3.main_txt {width: 100%; color: #333;text-align: center;}
@@ -327,9 +325,9 @@ li.gall_event>a img {overflow:hidden;display: block;width: 70%; margin: 0 auto;}
     /* #sns_ct */
     #sns_ct {position: relative;width: 100%;}
 
-    .sns_bg {height: 39vw;}
+    .sns_bg {height: 71vh;}
     .sns_ct_inner {width: 1280px;}
-    
+    .sns_more_btn>a {display: block; width: 100%; height: 30px; line-height: 30px;font-size: 1.2vw;}
 }
 
 /* -----------------------------대형태블릿(769~1280 / 100%정렬)----------------------------- */
