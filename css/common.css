@@ -1,14 +1,5 @@
 @charset "utf-8";
 
-/* font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Nanum Gothic', sans-serif;
-font-family: 'Noto Sans JP', sans-serif;
-font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif; */
-
 /* -----------------------layout----------------------- */
 #wrap {display: block;overflow-x: hidden; max-width: 100%;}
 #header {display: block;position: fixed;width: 100%;height: 82px;z-index: 400; background-color: #000;}
@@ -33,9 +24,6 @@ font-family: 'Roboto Slab', serif; */
 
 #gnb {}
 .top_wrap {display: none;}
-/* .top_wrap>.close_btn {float: right; width: 10%; height: 80px;}
-.top_wrap>.close_btn>a {display: block; width: 100%; height: 80px; }
-.top_wrap>.close_btn>a>i {display: block; width: 100%; height: 80px; line-height: 80px; margin: 0 auto; color: #fff;} */
 
 #gnb>.main_menu {display: flex; justify-content: center; width: 100%;}
 #gnb>.main_menu>li {width: 150px;height: 82px;}
@@ -70,7 +58,6 @@ address p {width: 100%; color: #eea430; font-weight: 400; padding-bottom: 2%;}
 
 /* @media screen */
 /* -----------------------------일반PC (1281~1600 / 1280px정렬)----------------------------- */
-/* 삭제하기전에 다른 반응형 기기에도 코드 있는건 아닌지 한번 더 확인할것 */
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
 
     #header_inner {width: 1280px; margin: 0 auto;}
@@ -92,9 +79,6 @@ address p {width: 100%; color: #eea430; font-weight: 400; padding-bottom: 2%;}
     .footer_infor {width: 55%;}
     .footer_infor_top span {font-size: 1rem;}
     address p {font-size: 0.8rem; padding-bottom: 1.8%;}
-
-
-
 }
 /* -----------------------------대형태블릿(769~1280 / 100%정렬)----------------------------- */
 @media screen and (min-width: 769px) and (max-width: 1280px) {
@@ -139,13 +123,11 @@ address p {width: 100%; color: #eea430; font-weight: 400; padding-bottom: 2%;}
     .footer_logo {width: 25%;align-self: center;}
     .footer_logo>a {width: 90%;}
 
-
     .footer_infor {width: 100%;}
 
     .footer_infor_top {width: 85%; margin: 0 auto; padding:1.8% 0;}
     .footer_infor_top span {width: 20px; color: #fff; font-size: 1.2rem; margin-right: 2%; text-align: center;}
     .footer_infor_top span a {font-size: 1rem; color: #fff;}
-
 
     address {width: 100%;}
     address p {width: 100%; height: 20px; line-height: 20px; color: #eea430; font-weight: 400; margin-bottom: 1.5%;}

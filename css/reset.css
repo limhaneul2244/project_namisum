@@ -72,7 +72,6 @@ input.underline {
 	color: #333;
 	box-sizing: border-box;
 	font-family: 'Noto Sans KR', sans-serif;
-	/* font-family: 'Roboto Slab', serif; */
 }
 html {
 	font-size: 16px;
@@ -87,3 +86,12 @@ html {
 #skip_nav a{display:block; height:1px; margin-bottom:-1px;overflow:hidden; text-align:center; text-decoration:none; color:#333;font-size:12px;}
 #skip_nav a:hover,#skip_nav a:focus,#skip_nav a:active{
 display:block;height:auto;padding:5px 0; background:#f2f2f2;}
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
