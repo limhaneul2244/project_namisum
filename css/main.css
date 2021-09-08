@@ -169,11 +169,6 @@ li.gall_event>a img {overflow:hidden;display: block;width: 70%; margin: 0 auto;}
     .mySwiper>ul.swiper-wrapper>.swiper-slide {width: 100%;}
     .mySwiper>ul.swiper-wrapper>.swiper-slide>img {display: block; width: 100%;height: calc(49.9vw/1.77);}
 
-    /* .mySwiper {position: absolute; width: 50%; top: 82px; right: 0;}
-    .mySwiper>.swiper-wrapper {display: block;}
-    .mySwiper img {display: block; width: 100%; height: calc(49.9vw/1.77); } */
-
-
     .visual_bottom {display: none;}
 
     /* #payment */
